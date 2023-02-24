@@ -1,0 +1,76 @@
+html{
+  box-sizing: border-box;
+}
+body {
+    box-sizing: border-box;
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    
+    width: 95%;
+    height: 450px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    box-sizing: border-box;
+}
+.heading{
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1.5px solid white;
+  height: 13%;
+  padding: 1px 0 0 7px;
+}
+.body{
+  box-sizing: border-box;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  margin-left: 10px;
+}
+p{
+  padding: 0px 40px 10px 15px;
+  text-align: center;
+  line-height: 23px;
+  font-weight: bold
+}
+#hint{
+  font-weight: lighter;
+}
+input{
+  box-sizing: border-box;
+  width: 90%;
+  height: 50px;
+  margin: 8px 20px;
+  color: white;
+  outline: none;
+  padding: 0 25px;
+  font-size: 17px;
+  letter-spacing: 5px;
+  border: 1px solid white;
+  background: transparent;
+}
+button{
+  width: 90%;
+  border: none;
+  outline: none;
+  height: 50px;
+  margin: 8px 20px;
+}
+#check{
+  background: grey;
+}
+button:hover , #check:hover{
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
