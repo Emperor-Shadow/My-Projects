@@ -1,81 +1,322 @@
-body {
-    padding:0;
-    margin: 0;
-    font-family: monospace;
-    background: black;
-    box-sizing: border-box;
+:root{
+  --blue : #33A0FF;
 }
-main{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: whitesmoke;
   height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
+  box-sizing: border-box;
 }
-main > section{
+.container{
   height: 100vh;
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
+  width: 100vw;
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-.head{
+.firstContainer{
+  height: 100vh;
   position: relative;
   top: 0;
-  left: 0;
-  height: 100px;
+  left: 680px;
+  right: 0;
+}
+.btn1{
   display: flex;
   align-items: center;
-  padding: 0 0 0 10px;
+  justify-content: flex-end;
 }
-h2{
-  color: white;
-  font-weight: bolder;
+.firstContainer .skip{
+  color: var(--blue);
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
 }
-span{
-  color: dodgerblue;
-}
-nav{
-  height: 100px;
+.firstContainer .firstBody{
+  height: 94.5vh;
+  width: 100vw;
   display: flex;
-  justify-content: space-aroun;
+  justify-content: center;
   align-items: center;
-  padding: 0 0 0 40px;
+  flex-direction: column;
 }
-nav > a{
-  color: dodgerblue;
-  text-decoration: none;
-  font-weight: bolder;
-  text-align: center;
+.firstBody h2{
+  color: black;
+  position: relative;
+  top: -160px;
 }
-nav > a:nth-child(1){
-  color: white;
-}
-.section1{
+.firstBody p{
+  color: grey;
+  position: relative;
+  top: -140px;
   display: inline-block;
-}
-h1{
-  font-size: 35px;
-}
-.section1 > h1 , p{
+  width: 300px;
   text-align: center;
-  font-weight: bolder;
-  color: whitesmoke;
 }
-#bestp{
-  color: dodgerblue;
-  display: grid;
-  place-items: center;
-  margin-top: 300px;
+.firstBody .progressBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
-#middle{
-  height: 100vh;
-  width: 90%;
-  text-align: justify;
-  padding: 2px 0 0 15px;
+.firstBody .progressBar div{
+  width: 8px;
+  height: 8px;
+  background: grey;
+  margin: 3px;
+  border-radius: 50%;
 }
-h3{
-  color: ghostwhite;
-  font-weight: bolder;
-  font-size: 50px;
-  text-decoration: underline;
+.firstBody .progressBar div:first-child{
+  width: 15px;
+  height: 15px;
+  background: var(--blue);
 }
-#middle p{
+.firstBody .next{
+  background: var(--blue);
   color: white;
+  font-weight: 600;
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  bottom: -300px;
+}
+
+.btn2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondContainer{
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 700px;
+}
+.secondContainer .skip2{
+  color: var(--blue);
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  font-size: 15px;
+}
+.secondContainer .skip2:first-of-type{
+  color: black;
+}
+.secondContainer .secondBody{
+  height: 94.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.secondBody h2{
+  color: black;
+  position: relative;
+  top: -160px;
+}
+.secondBody p{
+  color: grey;
+  position: relative;
+  top: -140px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+.secondBody .progressBar2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.secondBody .progressBar2 div{
+  width: 8px;
+  height: 8px;
+  background: grey;
+  margin: 3px;
+  border-radius: 50%;
+}
+.secondBody .progressBar2 div:nth-child(2){
+  width: 15px;
+  height: 15px;
+  background: var(--blue);
+}
+.secondBody .next2{
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  bottom: -300px;
+  margin: 10px
+}
+
+
+
+.btn3{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.thirdContainer{
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 720px;
+}
+.thirdContainer .skip3{
+  color: var(--blue);
+  width: 70px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.thirdContainer .skip3:first-of-type{
+  color: black;
+}
+.thirdContainer .thirdBody{
+  height: 94.5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.thirdBody h2{
+  color: black;
+  position: relative;
+  top: -160px;
+}
+.thirdBody p{
+  color: grey;
+  position: relative;
+  top: -140px;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
+}
+.thirdBody .progressBar3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.thirdBody .progressBar3 div{
+  width: 8px;
+  height: 8px;
+  background: grey;
+  margin: 3px;
+  border-radius: 50%;
+}
+.thirdBody .progressBar3 div:nth-child(3){
+  width: 15px;
+  height: 15px;
+  background: var(--blue);
+}
+.thirdBody .next3{
+  background: var(--blue);
+  color: white;
+  font-weight: 600;
+  width: 80%;
+  height: 50px;
+  border-radius: 15px;
+  border: none;
+  position: relative;
+  bottom: -300px;
+  margin: 10px;
+}
+
+
+.container .signUp{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  top: 0;
+  left: 740px;
+}
+.signUp legend{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 13px 0;
+}
+.signUp p{
+  text-align: center;
+}
+.signUp form{
+  width: 100vw;
+  margin: 20px 5px;
+  padding: 10px 15px;
+}
+.signUp input{
+  width: 100%;
+  height: 50px;
+  background: gainsboro;
+  border-radius: 10px;
+  border: none;
+  padding: 0 25px;
+  margin: 5px 0 15px 0;
+  color: black;
+  font-size: 15px;
+  outline-color: var(--blue);
+  position: relative;
+  box-shadow: 2px 3px rgba(0,0,0,0.2);
+}
+.signUp .login{
+  background: var(--blue);
+  color: whitesmoke;
+  width: 100%;
+  height: 45px;
+  margin: 20px 0;
+  border-radius: 10px;
+  border: none;
+}
+.signUp a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.signUp .sign{
+  background: transparent;
+  color: var(--blue);
+  font-size: 17px;
+  border: none;
+}
+#sign{
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  bottom: -480px;
+  left: 60px;
+}
+.pas {
+  position: relative;
+}
+.signUp img{
+  height: 30px;
+  position: absolute;
+  top: 37px;
+  right: 10px;
 }
